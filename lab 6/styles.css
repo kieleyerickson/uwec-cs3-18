@@ -1,0 +1,47 @@
+h1 {
+ background-color: #b0d3e4; 
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 2rem;
+ font-weight: bold;
+ text-align: center;
+ margin: 1.5rem 0;
+ padding: 1rem;
+}
+
+h1 a {
+ color: white;
+ text-decoration: none;
+}
+nav {
+  text-align: center;
+  margin: 1rem 0;
+}
+nav a {
+  background-color: #b0d3e4; 
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+h2{
+background-image:url(images/Rainy-day.jpg);
+background-repeat: round;
+background-position: top;
+background-size: contain;
+}
+
+a:hover {
+    color: rgb(8, 41, 102);
+    text-decoration: underline;
+}
+
+h3 {
+background-color: #b0d3e4; 
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  margin: 0 1rem;
+  display: block;
+  width: 20rem;
+}
