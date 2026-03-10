@@ -1,0 +1,141 @@
+.logo {
+    margin:0;
+    padding:0;
+    width: 20rem;
+}
+
+body{
+    font-family: "IBM Plex Serif", serif;
+    background: #c69c6d;
+    color:white;
+}
+
+header{
+    background-color: #42210b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+header div{
+    display:flex;
+    align-items:center;
+}
+h1{
+    display: none;
+}
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color: white;
+    font-weight:600;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.about{
+    background:#c69c6d;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding:40px;
+    gap:40px;
+}
+
+.story{
+    background:#42210b;
+    color:white;
+    padding:30px;
+    grid-area: 1/1/3/2;
+}
+
+.story h2{
+    font-family: "Meow Script", cursive;
+    font-size:40px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.photos{
+    display: flex;
+    gap:20px;
+}
+
+.photos img{
+    width:500px;
+    height:auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+footer{
+    justify-self: center;
+}
+
+.footer-contact{
+    background:#42210b;
+    width:100%;
+    color:white;
+    padding:10px 10px;
+    font-size:14px;
+}
+.menu{
+    background: #42210b;
+    padding: 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu h2{
+    flex-basis: 100%;
+    background: #c69c6d;
+    color: white;
+    width:30%;
+    padding:10px;
+    margin-bottom:40px;
+    font-family:"Meow Script", cursive;
+}
+.menu>div{
+    width: 30%;
+    background:#c69c6d;
+    padding:25px;
+    color:white;
+    font-family: "IBM Plex Serif", serif;
+}
+.menu h3{
+    text-align:center;
+    margin-bottom:15px;
+}
+.menu ul{
+    margin-left:18px;
+}
+.menu ul ul{
+    font-size:14px;
+}
+.drinks {
+ 
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.drinks h3{
+    text-align:center;
+    margin-bottom:15px;
+    flex-basis: 100%;
+}
+
+.drinks div{
+    width:47%;  
+}
+@media (max-width:1600px){
+    .photos img {width: 48%;}
+}
+@media (max-width:900px){
+    .about { display: block;}
+    .photos { margin: 2rem auto}
+    .menu {display:flex; justify-content: center; gap: 1rem;}
+    .menu>.dinner,.menu>.desserts{width: 40%;}
+    .menu>div{width: 90%;}
+    .drinks {display:inline-flex; justify-content: space-between;}
+    .drinks>div {width: 47%;}
+}
