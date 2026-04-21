@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Eiger</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="parallax">
         <img src="images/grindelwald.jpg" alt="Grindelwald">
     </div>
-    <div class="overlay"></div>
+    <div class="overlay toggle-nav"></div>>
     <header>
-        <div class="hamburger">
+        <div class="hamburger" onclick="toggleNav()">
             <hr>
             <hr>
             <hr>
         </div>
-        <nav>
+        <nav class="toggle-nav">
             <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
             <a href="#routes">Climb</a>
@@ -53,9 +54,9 @@
         <section class="gallery" id="gallery">
             <h3>Gallery</h3>
         <div>
-            <img src="images/gallery/alpine-panorama.jpg" alt="Alpine Panorama">
-            <img src="images/gallery/alpine.jpg" alt="Alpine">
-            <img src="images/gallery/eiger.jpg" alt="Eiger">
+            <img src="images/gallery/alpine-panorama.jpg" alt="Alpine Panorama" class="panorama">
+            <img src="images/gallery/alpine2.jpg" alt="Alpine">
+            <img src="images/gallery/eiger2.jpg" alt="Eiger">
             <img src="images/gallery/gorge-rock.jpg" alt="Gorge Rock">
             <img src="images/gallery/panoramic.jpg" alt="Panoramic">
             <img src="images/gallery/sunrise.jpg" alt="Sunrise">
@@ -108,7 +109,7 @@
 </main>
 <footer>
     <span>
-        "Copyright" <script>document.write(new Date().getFullYear());</script>
+        Copyright <script>document.write(new Date().getFullYear());</script>
     </span>
 
     <div class="social">
